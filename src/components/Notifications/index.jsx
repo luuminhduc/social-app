@@ -32,7 +32,7 @@ const Notifications = () => {
       ))}
       {user && user.news.length > 5 ? (
         <button
-          onClick={() => setLimit((limit += 5))}
+          onClick={() => setLimit(limit + 5)}
           className="btn_sm btn_primary"
         >
           More

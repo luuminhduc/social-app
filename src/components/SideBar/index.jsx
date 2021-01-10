@@ -1,4 +1,4 @@
-import { Face, Group, GroupAdd, People } from "@material-ui/icons";
+import { Face, GroupAdd, People } from "@material-ui/icons";
 import React from "react";
 import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
@@ -22,11 +22,6 @@ const SideBar = () => {
         <GroupAdd />
         <span>People</span>
       </NavLink>
-      {/* 
-      <NavLink className="sideBarItem" to="/">
-        <People />
-        <span>Friends</span>
-      </NavLink> */}
     </div>
   );
 };

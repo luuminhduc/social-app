@@ -1,4 +1,3 @@
-import { AssignmentReturnRounded } from '@material-ui/icons';
 import  * as actions from '../action/commentAction/actionTypes';
 
 const initalState = {

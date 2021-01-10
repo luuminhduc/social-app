@@ -26,7 +26,7 @@ const PersonalPage = () => {
 
   useEffect(() => {
     dispatch(getUser(userId));
-  }, [dispatch, params]);
+  }, [dispatch, params, userId]);
 
   useEffect(() => {
     if (!auth.uid) history.push("/login");

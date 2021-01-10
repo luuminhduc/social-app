@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
@@ -14,6 +14,8 @@ const AccountSetting = () => {
 
   const { user } = loginReducer;
 
+  const [model, setModel] = useState("");
+
   const dispatch = useDispatch();
 
   const history = useHistory();
@@ -23,12 +25,12 @@ const AccountSetting = () => {
   }, [dispatch, history, auth]);
 
   useEffect(() => {
-    if (user) {
+    if (user && !watch("userName") && !watch("age") && !watch("occupation")) {
       setValue("userName", user.userName);
       setValue("age", user.age);
       setValue("occupation", user.occupation);
     }
-  }, []);
+  }, [user, setValue, watch]);
 
   const onSubmit = (data) => {
     const { userName, age, occupation } = data;

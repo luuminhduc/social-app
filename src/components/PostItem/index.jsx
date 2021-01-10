@@ -55,7 +55,7 @@ const PostItem = ({ post }) => {
   useEffect(() => {
     const newComments = commentList.filter((el) => el.postId === id);
     setComments(newComments);
-  }, [dispatch, commentList, postList]);
+  }, [dispatch, commentList, postList, id]);
 
   const getName = (uid) => {
     const user = getUserName(userList, uid);

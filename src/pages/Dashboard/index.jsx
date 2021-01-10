@@ -7,18 +7,12 @@ import SideBar from "../../components/SideBar";
 import { fetchAllPosts } from "../../redux/action/postAction/actions";
 import { fetchAllComments } from "../../redux/action/commentAction/actions";
 import { getAllUsers } from "../../redux/action/userAction/actions";
-import { getUserName as getUser } from "../../utils/getUserName";
-import { handleAlert } from "../../redux/action/commonAction/actions";
 
 const DashBoard = () => {
   const firebaseReducer = useSelector((state) => state.firebaseReducer);
   const { auth } = firebaseReducer;
 
   const loginReducer = useSelector((state) => state.loginReducer);
-
-  const userReducer = useSelector((state) => state.userReducer);
-
-  const { userList } = userReducer;
 
   const { user } = loginReducer;
 
