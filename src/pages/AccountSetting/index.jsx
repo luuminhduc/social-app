@@ -14,8 +14,6 @@ const AccountSetting = () => {
 
   const { user } = loginReducer;
 
-  const [model, setModel] = useState("");
-
   const dispatch = useDispatch();
 
   const history = useHistory();
