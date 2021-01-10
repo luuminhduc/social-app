@@ -1,0 +1,62 @@
+%btn {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  font-family: $font-stack;
+  .link {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.btn_sm {
+  @extend %btn;
+  padding: 8px 12px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.btn_md {
+  @extend %btn;
+  padding: 12px 16px;
+  font-size: 16px;
+}
+
+.btn_default {
+  @extend %btn;
+  background-color: transparent;
+  //color: $light-theme-text;
+  color: #fff;
+}
+
+.btn_link {
+  .link {
+    color: $primary-color;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  &.active_link {
+    background-color: lighten($color: $primary-color, $amount: 5%);
+  }
+}
+
+.btn_block {
+  width: 100%;
+}
+.btn_primary {
+  background-color: $primary-color;
+  color: #fff;
+}
+.btn_secondary {
+  background-color: $secondary-color;
+  color: #fff;
+}
+
+.btn_info {
+  background-color: $info-color;
+  color: #fff;
+}

@@ -1,0 +1,23 @@
+.modal {
+  .modal-content {
+    max-height: 500px;
+    overflow-y: scroll;
+    .cancel {
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+    @include MediaQuery($lg) {
+      width: 40%;
+    }
+    .item {
+      padding: 15px;
+      background-color: lighten($color: $gray-color, $amount: 35%);
+      margin: 15px auto;
+      border-radius: 5px;
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+}

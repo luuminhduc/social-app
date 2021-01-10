@@ -1,0 +1,9 @@
+export const ADD_POST = "addPost";
+export const SHOW_POST_MODAL = "showPostModal";
+export const HIDE_POST_MODAL = "hidePostModal";
+export const FET_ALL_POSTS = "FetAllPosts";
+export const UPDATE_LIKE_POST = "updateLikePost";
+export const DELETE_POST = "deletePost";
+export const EDIT_POST = "editPost";
+export const SELECT_POST = "selectPost";
+export const DROP_POST = "dropPost";

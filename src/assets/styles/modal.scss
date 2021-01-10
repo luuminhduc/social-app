@@ -1,0 +1,32 @@
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($color: #000000, $alpha: 0.2);
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+  .modal-content {
+    @include MediaQuery($xs) {
+      width: 80%;
+    }
+    @include MediaQuery($md) {
+      width: 50%;
+    }
+    @include MediaQuery($lg) {
+      width: 50%;
+    }
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    position: relative;
+    .cancel {
+      position: absolute;
+      top: 5%;
+      right: 5%;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.comments {
+  margin: 10px 0;
+  width: 100%;
+  border-top: 1px solid lighten($color: #ccc, $amount: 10%);
+  padding: 15px 0;
+  .comments_list {
+    margin: 15px 0;
+    .comment {
+      margin: 10px 0;
+      border-bottom: 1px solid lighten($color: #ccc, $amount: 15%);
+      padding: 10px 15px;
+    }
+    .meta_data {
+      font-size: 13px;
+      font-weight: 300;
+      color: $gray-color;
+    }
+    .comment_text {
+      font-size: 14px;
+    }
+  }
+}

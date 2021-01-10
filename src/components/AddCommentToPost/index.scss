@@ -1,0 +1,10 @@
+.addCommmentToPost {
+  width: 100%;
+  border-top: 1px solid lighten($color: #ccc, $amount: 10%);
+  padding-top: 15px;
+  input {
+    width: 100%;
+    border: none;
+    background-color: lighten($color: $gray-color, $amount: 35%);
+  }
+}

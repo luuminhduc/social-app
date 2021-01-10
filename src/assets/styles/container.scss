@@ -1,0 +1,40 @@
+%container {
+  width: 90%;
+  margin: 0px auto;
+}
+
+.container_sm {
+  @include MediaQuery($xs) {
+    width: 90%;
+  }
+  @include MediaQuery($sm) {
+    width: 50%;
+  }
+  @include MediaQuery($md) {
+    width: 40%;
+  }
+  @include MediaQuery($lg) {
+    width: 30%;
+  }
+  @extend %container;
+}
+
+.container_md {
+  @include MediaQuery($xs) {
+    width: 90%;
+  }
+  @include MediaQuery($sm) {
+    width: 50%;
+  }
+  @include MediaQuery($md) {
+    width: 40%;
+  }
+  @include MediaQuery($lg) {
+    width: 50%;
+  }
+  @extend %container;
+}
+
+.container {
+  padding-top: 80px;
+}

@@ -1,0 +1,69 @@
+.alertList {
+  position: fixed;
+  top: 20%;
+  right: 0;
+  z-index: 9999;
+}
+
+%alert {
+  min-width: 250px;
+  padding: 18px;
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  animation: alert 0.4s linear, disappear 3.9s linear;
+
+  &.gone {
+    opacity: 0;
+    transition: 0.2s linear;
+  }
+
+  .icon {
+    cursor: pointer !important;
+  }
+}
+
+.alert_success {
+  @extend %alert;
+  background-color: $success-color;
+}
+
+.alert_error {
+  @extend %alert;
+  background-color: $error-color;
+}
+
+.alert_info {
+  @extend %alert;
+  background-color: $info-color;
+}
+
+.alert_warning {
+  @extend %alert;
+  background-color: $warning-color;
+}
+
+@keyframes alert {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes disappear {
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

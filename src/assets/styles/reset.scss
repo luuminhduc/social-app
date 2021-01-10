@@ -1,0 +1,45 @@
+@import "./button.scss";
+@import "./shadow.scss";
+@import "./input.scss";
+@import "./form.scss";
+@import "./container.scss";
+@import "./alert.scss";
+@import "./flex.scss";
+@import "./card.scss";
+@import "./badge.scss";
+@import "./modal.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-stack;
+  margin: 0;
+  padding: 0;
+  color: $dark-theme-bg;
+  overflow-x: hidden;
+}
+
+%link {
+  text-decoration: none;
+}
+.link_dark {
+  @extend %link;
+  color: $light-theme-text;
+}
+
+.m-3 {
+  margin: 10px 0;
+}
+
+.randomUser_item {
+  position: relative;
+  .status_friend {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 12px;
+    color: $secondary_color;
+  }
+}

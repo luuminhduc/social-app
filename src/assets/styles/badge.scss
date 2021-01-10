@@ -1,0 +1,16 @@
+%badge {
+  padding: 2px 7px;
+  border-radius: 100%;
+}
+
+.badge_waring {
+  @extend %badge;
+  background-color: $warning-color;
+  color: #333;
+}
+
+.badge_secondary {
+  @extend %badge;
+  background-color: $secondary-color;
+  color: #fff;
+}

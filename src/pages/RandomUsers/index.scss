@@ -1,0 +1,18 @@
+.users {
+  .users_list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+
+    .randomUser_item {
+      position: relative;
+      .status_friend {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-size: 12px;
+        color: $secondary_color;
+      }
+    }
+  }
+}

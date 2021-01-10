@@ -1,0 +1,17 @@
+input {
+  padding: 14px;
+  border: 1px solid lighten($color: $gray-color, $amount: 30%);
+  font-family: $font-stack;
+  outline: none;
+  border-radius: 5px;
+  outline: none !important;
+  &:focus {
+    outline: none;
+  }
+  @include MediaQuery($xs) {
+    width: 90%;
+  }
+  &.error {
+    border-color: $error-color;
+  }
+}
